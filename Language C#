@@ -1,0 +1,128 @@
+using System;
+
+class Program {
+  public static void Main (string[] args){
+    Console.Clear();
+    // Declaração e atribuição de valor às variáveis
+    int N, y, I = 0, E = 0;
+    // Informações importantes
+    Console.WriteLine ("TESTE DE PERSONALIDADE - EXTROVERTIDO, INTROVERTIDO OU AMBIVERTIDO?\n\nINSTRUÇÕES");
+    Console.WriteLine ("Para cada pergunta do teste, digite o número correspondente à opção desejada e pressione a tecla enter em seguida.");
+    // Definição de vezes que o código será repetido
+    Console.WriteLine ("Quantas pessoas realizarão o teste? ");
+    N = int.Parse(Console.ReadLine());
+    for(int i = 1; i <= N; i++) {
+      Console.WriteLine("Participante ", i+')');
+      I = 0;
+      E = 0;
+    // Realização das perguntas - Pergunta 1
+      do{
+        Console.WriteLine("Pergunta 1: O que você mais gosta de fazer em uma festa?");
+        Console.WriteLine("[1] - Passar o tempo com meu grupo de amigos íntimos");
+        Console.WriteLine("[2] - Conhecer pessoas novas e fazer novas amizades");   
+        Console.WriteLine("[3] - Ficar sentado curtindo a música");
+        Console.WriteLine("[4] - Dançar, pular e beber muito!");
+        Console.WriteLine("Opção: ");
+        y = int.Parse(Console.ReadLine());
+      if (y < 1 || y > 4)
+        Console.WriteLine("Opção inválida");
+      else if (y == 1 || y == 3)
+        I++;
+      else //y == 2 || y == 4
+        E++;
+    }while (y < 1 || y > 4);
+    // Pergunta 2
+      do{
+        Console.WriteLine("Pergunta 2: Qual das seguintes situações te deixa mais desconfortável?");
+        Console.WriteLine("[1] - Ficar no meio de uma multidão barulhenta");
+        Console.WriteLine("[2] - Monotonia demais no trabalho e/ou em casa");
+        Console.WriteLine("[3] - Ter que jogar conversa fora com pessoas que você não conhece");
+        Console.WriteLine("[4] - Ficar sozinho em casa");
+        Console.WriteLine("Opção: ");
+        y = int.Parse(Console.ReadLine());
+        if (y < 1 || y > 4)
+          Console.WriteLine("Opção inválida");
+        else if (y == 1 || y == 3)
+          I++;
+        else //y == 2 || y == 4
+          E++;
+      }while (y < 1 || y > 4);
+    // Pergunta 3
+      do{
+        Console.WriteLine("Pergunta 3: Qual dessas opções te deixa mais animado?");
+        Console.WriteLine("[1] - Ir ao cinema");
+        Console.WriteLine("[2] - Ir a uma festa ou show");
+        Console.WriteLine("[3] - Ir a um hotel-fazenda ou sítio");
+        Console.WriteLine("[4] - Ir à praia");
+        Console.WriteLine("Opção: ");
+        y = int.Parse(Console.ReadLine());
+        if (y < 1 || y > 4)
+          Console.WriteLine("\nOpção inválida\n");
+        else if (y == 1 || y == 3)
+          I++;
+        else //y == 2 || y == 4
+          E++;
+      }while (y < 1 || y > 4);
+  // Pergunta 4
+      do{
+        Console.WriteLine("Pergunta 4: Quando seus amigos te chamam para sair normalmente qual o seu primeiro pensamento?");
+        Console.WriteLine("[1] - Contanto que seja só com o meu grupo de amigos, topo");
+        Console.WriteLine("[2] - Sair? Já estou com a roupa de ir!");
+        Console.WriteLine("[3] - Vai ter muita gente?");
+        Console.WriteLine("[4] - Contanto que não seja pra algum lugar muito monótono, vou sim");
+        Console.WriteLine("Opção: ");
+        y = int.Parse(Console.ReadLine());
+        if (y < 1 || y > 4)
+          Console.WriteLine("\nOpção inválida");
+        else if (y == 1 || y == 3)
+          I++;
+        else //y == 2 || y == 4
+          E++;
+      }while (y < 1 || y > 4);
+  // Pergunta 5
+      do{
+        Console.WriteLine("Pergunta 5: Ao ficar sozinho em casa, o que você faz?");
+        Console.WriteLine("[1] - Assisto uma série ou jogo video game no meu quarto");
+        Console.WriteLine("[2] - Chamo meus amigos para um churrasco!");
+        Console.WriteLine("[3] - Aproveito para estudar ou ler um livro");
+        Console.WriteLine("[4] - Ligo para um amigo(a) e passo horas colocando a conversa em dia");
+        Console.WriteLine("Opção: ");
+        y = int.Parse(Console.ReadLine());
+        if (y < 1 || y > 4)
+          Console.WriteLine("Opção inválida");
+        else if (y == 1 || y == 3)
+          I++;
+        else //y == 2 || y == 4
+          E++;
+      }while (y < 1 || y > 4);
+  // Pergunta 6
+      do{
+        Console.WriteLine("Pergunta 6: Em uma conversa com seu grupo de amigos, você:");
+        Console.WriteLine("[1] - É um bom ouvinte; espera, calmamente, sua vez de falar e se irrita quando os outros te interrompem");
+        Console.WriteLine("[2] - Acha mais difícil ouvir do que falar, não aguenta ficar de fora da conversa por muito tempo e se entedia quando isso acontece");
+        Console.WriteLine("Opção: ");
+        y = int.Parse(Console.ReadLine());
+        if (y < 1 || y > 2)
+          Console.WriteLine("Opção inválida");
+        else if (y == 1)
+          I++;
+        else //y == 2
+          E++;
+      }while (y < 1 || y > 2);
+      Console.Clear(); 
+  // Verificação dos resultados
+      if (I > E)
+        Console.WriteLine("Participante " +i+ ": Você é uma pessoa Introvertida!");
+      else if (E > I)
+        Console.WriteLine("\nParticipante " +i+ ": Você é uma pessoa Extrovertida!");
+      else // E == I
+        Console.WriteLine("\nParticipante " +i+ ": Você é uma pessoa Ambivertida!");
+    }
+  // Finalização do programa
+    Console.WriteLine("Informações Sobre os Resultados:");
+    Console.WriteLine("Pessoas Introvertidas: Possuem uma maior necessidade de ficar algum tempo sozinhas, ficam cansadas rapidamente ao realizar atividades sociais tanto com a família quanto com amigos, e preferem ficar em casa a sair para lugares muito movimentados.");
+    Console.WriteLine("Pessoas Extrovertidas: Possuem uma maior necessidade social, ficam cansadas e entediadas com atividades muito monótonas e adoram conhecer novas pessoas, sair da rotina e participar de festas e eventos com muito movimento.");
+    Console.WriteLine("Pessoas Ambivertidas: Possuem características tanto do tipo extrovertido como do introvertido. Gostam de sair e socializar com os amigos, mas ficam cansadas após certo de tempo, como os introvertidos; porém também ficam cansadas com muita monotonia, como os extrovertidos.");
+    Console.WriteLine("OBRIGADO POR REALIZAR O TESTE!");
+  }
+}
