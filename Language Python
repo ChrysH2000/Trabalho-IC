@@ -1,0 +1,112 @@
+
+i = 0
+I = 0
+E = 0
+
+# Informações importantes
+print("TESTE DE PERSONALIDADE - EXTROVERTIDO, INTROVERTIDO OU AMBIVERTIDO?")
+print("INSTRUÇÕES")
+print("Para cada pergunta do teste, digite o número correspondente à opção desejada e pressione a tecla enter em seguida.")
+# Definição de vezes que o código será repetido
+N = int(input("Quantas pessoas realizarão o teste? ")
+while i < N :
+    print("\nParticipante {0}\n".format (i))
+    I = 0;
+    E = 0;
+# Realização das perguntas - Pergunta 1
+    while (y < 1 || y > 4):
+      print("\nPergunta 1: O que você mais gosta de fazer em uma festa?\n\n")
+      print("[1] - Passar o tempo com meu grupo de amigos íntimos\n")
+      print("[2] - Conhecer pessoas novas e fazer novas amizades\n")
+      print("[3] - Ficar sentado curtindo a música\n")
+      print("[4] - Dançar, pular e beber muito!\n")
+      y = int(input("Opção: "))
+      if (y < 1 || y > 4)
+        print("\nOpção inválida\n")
+      elif (y == 1 || y == 3)
+        I++;
+      else //y == 2 || y == 4
+        E++;
+# Pergunta 2
+  while (y < 1 || y > 4):
+    print("\nPergunta 2: Qual das seguintes situações te deixa mais desconfortável?\n\n")
+    print("[1] - Ficar no meio de uma multidão barulhenta\n")
+    print("[2] - Monotonia demais no trabalho e/ou em casa\n")
+    print("[3] - Ter que jogar conversa fora com pessoas que você não conhece\n")
+    print("[4] - Ficar sozinho em casa\n")
+    y = int(input("Opção: "))
+    if (y < 1 || y > 4)
+      print("\nOpção inválida\n")
+    elif (y == 1 || y == 3)
+      I++;
+    else //y == 2 || y == 4
+      E++;
+# Pergunta 3
+  while (y < 1 || y > 4):
+    print("\nPergunta 3: Qual dessas opções te deixa mais animado?\n\n")
+    print("[1] - Ir ao cinema\n")
+    print("[2] - Ir a uma festa ou show\n")
+    print("[3] - Ir a um hotel-fazenda ou sítio\n")
+    print("[4] - Ir à praia\n")
+    y = int(input("Opção: "))
+    if (y < 1 || y > 4)
+      print("\nOpção inválida\n")
+    elif (y == 1 || y == 3)
+      I++;
+    else //y == 2 || y == 4
+      E++;
+# Pergunta 4
+  while (y < 1 || y > 4):
+    print("\nPergunta 4: Quando seus amigos te chamam para sair normalmente qual o seu primeiro pensamento?\n\n")
+    print("[1] - Contanto que seja só com o meu grupo de amigos, topo\n")
+    print("[2] - Sair? Já estou com a roupa de ir!\n")
+    print("[3] - Vai ter muita gente?\n")
+    print("[4] - Contanto que não seja pra algum lugar muito monótono, vou sim\n")
+    y = int(input("Opção: "))
+    if (y < 1 || y > 4)
+      print("\nOpção inválida\n")
+    elif (y == 1 || y == 3)
+      I++;
+    else //y == 2 || y == 4
+      E++;
+# Pergunta 5
+  while (y < 1 || y > 4):
+    print("\nPergunta 5: Ao ficar sozinho em casa, o que você faz?\n\n")
+    print("[1] - Assisto uma série ou jogo video game no meu quarto\n")
+    print("[2] - Chamo meus amigos para um churrasco!\n")
+    print("[3] - Aproveito para estudar ou ler um livro\n")
+    print("[4] - Ligo para um amigo(a) e passo horas colocando a conversa em dia\n")
+    y = int(input("Opção: "))
+    if (y < 1 || y > 4)
+      print("\nOpção inválida\n")
+    elif (y == 1 || y == 3)
+      I++;
+    else //y == 2 || y == 4
+      E++;
+# Pergunta 6
+  while (y < 1 || y > 2):
+    print("\nPergunta 6: Em uma conversa com seu grupo de amigos, você:\n\n")
+    print("[1] - É um bom ouvinte; espera, calmamente, sua vez de falar e se irrita quando os outros te interrompem\n")
+    print("[2] - Acha mais difícil ouvir do que falar, não aguenta ficar de fora da conversa por muito tempo e se entedia quando isso acontece\n")
+    y = int(input("Opção: "))
+    if (y < 1 || y > 2)
+      print("\nOpção inválida\n")
+    elif (y == 1)
+      I++;
+    else //y == 2
+      E++;
+  system("clear")
+# Verificação dos resultados
+  if (I > E)
+    print("\nParticipante %d: Você é uma pessoa Introvertida!\n", i)
+  elif (E > I)
+    print("\nParticipante %d: Você é uma pessoa Extrovertida!\n", i)
+  else #E == I
+    print("\nParticipante %d: Você é uma pessoa Ambivertida!\n", i)
+i++;
+# Finalização do programa
+print("\nInformações Sobre os Resultados:\n")
+print("\nPessoas Introvertidas: Possuem uma maior necessidade de ficar algum tempo sozinhas, ficam cansadas rapidamente ao realizar atividades sociais tanto com a família quanto com amigos, e preferem ficar em casa a sair para lugares muito movimentados.\n")
+print("\nPessoas Extrovertidas: Possuem uma maior necessidade social, ficam cansadas e entediadas com atividades muito monótonas e adoram conhecer novas pessoas, sair da rotina e participar de festas e eventos com muito movimento.\n")
+printf("\nPessoas Ambivertidas: Possuem características tanto do tipo extrovertido como do introvertido. Gostam de sair e socializar com os amigos, mas ficam cansadas após certo de tempo, como os introvertidos; porém também ficam cansadas com muita monotonia, como os extrovertidos.\n")
+print("\nOBRIGADO POR REALIZAR O TESTE!\n")
